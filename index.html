@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <title>Nikhil Anand</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
     <style>
+        .display-6 {
+            font-size: 24px;
+            font-family: "Helvetica Neue", sans-serif;
+        }
+
         *::selection {
             background: #000;
             color: #fff;
@@ -25,50 +40,193 @@
         }
 
         img.profile {
-            border-radius: 50%;
+            width: inherit;
+            height: border-box;
         }
 
         div.box {
             width: 100%;
             height: 100%;
         }
+
+        .jumbotron {
+            background: #FFF;
+        }
+
+        p.about {
+            font-family: "Helvetica Neue", sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            font-family: "Helvetica Neue", sans-serif;
+            font-size: 32px;
+            color: #000;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .navbar-brand:hover {
+            color: #000;
+        }
+
+
+        .breaker {
+            margin-top: 4rem;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #000;
+            background-color: #fff;
+            border-bottom: 3px solid #000;
+            margin-left: 30%;
+            margin-right: 30%;
+            border-radius: 0;
+        }
+
+        .navigation-pills {
+            color: #000;
+        }
+
+        span#joke {
+            color: #626567;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-
-<!-- Jumbotron Text -->
-<div class="jumbotron">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-1 col-md-2 col-lg-2"></div>
-            <div class="col-sm-10 col-md-8 col-lg-8">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="box">
-                            <!--<img class="profile" src="img/myImage.jpg" alt="my picture here">-->
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <p class="title-body">
-                            <span id="well-hello-there">Well, hello there !!</span> <br/>
-                        </p>
-                        <p class="title-body">
-                            I am <b>Nikhil Anand</b> <br/>
-                            <u class="dashed-hello"> I love computers and the science that drives it. </u><br/>
-                            Welcome to my world, say Hello <br/>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1 col-md-2 col-lg-2"></div>
-        </div>
-    </div>
-</div>
-
-<!-- About Content -->
+<!-- Navbar -->
 <div class="container-fluid">
     <div class="row">
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+        <div class="col-sm-10 col-md-8 col-lg-8 justify-content-center">
+            <nav class="navbar nav justify-content-center">
+                <a class="navbar-brand" href="index.html">Nikhil Anand</a>
+            </nav>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="navigation-pills">
+                        <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                   role="tab"
+                                   aria-controls="pills-home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-Skills-tab" data-toggle="pill" href="#pills-skills"
+                                   role="tab"
+                                   aria-controls="pills-profile" aria-selected="false">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-Projects-tab" data-toggle="pill" href="#pills-projects"
+                                   role="tab"
+                                   aria-controls="pills-contact" aria-selected="false">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
     </div>
 </div>
+
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <!-- Home -->
+
+        <!-- Jumbotron Text -->
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1 col-md-2 col-lg-2"></div>
+                    <div class="col-sm-10 col-md-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="box">
+                                    <img class="profile" src="img/myImage2.jpg" alt="my picture here">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <p class="title-body">
+                                    <span id="well-hello-there">Well, hello there !!</span> <br/>
+                                </p>
+                                <p class="title-body">
+                                    I am <b>Nikhil Anand</b> <br/>
+                                    <u class="dashed-hello"> I love computers and the science that drives it. </u><br/>
+                                    Welcome to my world, say Hello <br/><br/>
+                                    My all time favourite CS joke is - <br/>
+                                    <span id="joke">There are 10 types of people in this world, those who understand binary and those
+                                        who don't</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1 col-md-2 col-lg-2"></div>
+                <div class="col-sm-10 col-md-8 col-lg-8">
+                    <p class="display-6">
+                        About Me
+                    </p>
+                    <p class="about">
+                        I am a CS undergrad studying in Vellore Institute of Technology, Vellore, India. <br/>
+                        I am originally from Jamshedpur, India. <br/>
+                        I like building things on software because hardware is a much lot of work <br/>
+                        <b>Data Science</b> is what I am exploring and <b>Java</b> is my language of preference <br/>
+                        When I am not programming, I am watching documentaries on Youtube. <br/>
+                        Activities I do, that does not involve a computer screen, are reading, thinking and making plans
+                        <br/>
+                    </p>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
+        <!-- Skills -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1 col-md-2 col-lg-2"></div>
+                <div class="col-sm-10 col-md-8 col-lg-8">
+                    <div class="jumbotron">
+                        
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
+        <!-- Projects -->
+
+    </div>
+</div>
+
+<!-- Template -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+        <div class="col-sm-10 col-md-8 col-lg-8"></div>
+        <div class="col-sm-1 col-md-2 col-lg-2"></div>
+    </div>
+</div>
+
 </body>
 </html>
