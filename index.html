@@ -13,6 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6433fc8980.js" crossorigin="anonymous"></script>
 
     <style>
         .display-6 {
@@ -25,7 +26,7 @@
             color: #fff;
         }
 
-        #well-hello-there {
+        span.well-hello-there {
             font-family: "Helvetica Neue", sans-serif;
             text-align: center;
         }
@@ -84,8 +85,6 @@
             color: #000;
             background-color: #fff;
             border-bottom: 3px solid #000;
-            margin-left: 30%;
-            margin-right: 30%;
             border-radius: 0;
         }
 
@@ -93,9 +92,14 @@
             color: #000;
         }
 
-        span#joke {
-            color: #626567;
-            font-style: italic;
+        blockquote {
+            bottom: 0;
+            position: absolute;
+        }
+
+        .icon-to-heading {
+            padding-right: 3px;
+            display: inline;
         }
     </style>
 </head>
@@ -117,17 +121,47 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
                                    role="tab"
-                                   aria-controls="pills-home" aria-selected="true">Home</a>
+                                   aria-controls="pills-home" aria-selected="true">
+                                    <i class="fas fa-house-user"></i>
+                                    <div class="icon-to-heading"></div>
+                                    Home
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-Skills-tab" data-toggle="pill" href="#pills-skills"
                                    role="tab"
-                                   aria-controls="pills-profile" aria-selected="false">Skills</a>
+                                   aria-controls="pills-skills" aria-selected="false">
+                                    <i class="fas fa-robot"></i>
+                                    <div class="icon-to-heading"></div>
+                                    Skills
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-Projects-tab" data-toggle="pill" href="#pills-projects"
                                    role="tab"
-                                   aria-controls="pills-contact" aria-selected="false">Projects</a>
+                                   aria-controls="pills-projects" aria-selected="false">
+                                    <i class="fab fa-github"></i>
+                                    <div class="icon-to-heading"></div>
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-projects"
+                                   role="tab"
+                                   aria-controls="pills-contact" aria-selected="false">
+                                    <i class="far fa-id-card"></i>
+                                    <div class="icon-to-heading"></div>
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-resume-tab" data-toggle="pill" href="#pills-projects"
+                                   role="tab"
+                                   aria-controls="pills-contact" aria-selected="false">
+                                    <i class="fas fa-file-word"></i>
+                                    <div class="icon-to-heading"></div>
+                                    Resume
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -157,16 +191,18 @@
                             </div>
                             <div class="col-8">
                                 <p class="title-body">
-                                    <span id="well-hello-there">Well, hello there !!</span> <br/>
+                                    <span class="well-hello-there">Well, hello there !!</span> <br/>
                                 </p>
                                 <p class="title-body">
                                     I am <b>Nikhil Anand</b> <br/>
                                     <u class="dashed-hello"> I love computers and the science that drives it. </u><br/>
-                                    Welcome to my world, say Hello <br/><br/>
-                                    My all time favourite CS joke is - <br/>
-                                    <span id="joke">There are 10 types of people in this world, those who understand binary and those
-                                        who don't</span>
-                                </p>
+                                    Welcome to my world, say Hello <br/></p>
+                                <blockquote class="blockquote text-left font-italic">
+                                    <p class="mb-0">There are 10 types of people in this world, those who understand
+                                        binary and those
+                                        who don't</p>
+                                    <footer class="blockquote-footer small font-italic">my favourite CS joke</footer>
+                                </blockquote>
                             </div>
                         </div>
                     </div>
@@ -205,9 +241,6 @@
             <div class="row">
                 <div class="col-sm-1 col-md-2 col-lg-2"></div>
                 <div class="col-sm-10 col-md-8 col-lg-8">
-                    <div class="jumbotron">
-                        
-                    </div>
                 </div>
                 <div class="col-sm-1 col-md-2 col-lg-2"></div>
             </div>
@@ -215,7 +248,11 @@
     </div>
     <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
         <!-- Projects -->
-
+        <!-- FIXME Correct it -->
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-projects-tab">
+        <!-- Projects -->
+        <!-- FIXME Correct it -->
     </div>
 </div>
 
