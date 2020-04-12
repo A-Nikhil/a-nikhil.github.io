@@ -15,127 +15,7 @@
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6433fc8980.js" crossorigin="anonymous"></script>
 
-    <style>
-        .display-6 {
-            font-size: 24px;
-            font-family: "Helvetica Neue", sans-serif;
-        }
-
-        *::selection {
-            background: #000;
-            color: #fff;
-        }
-
-        span.well-hello-there {
-            font-family: "Helvetica Neue", sans-serif;
-            text-align: center;
-        }
-
-        .title-body {
-            font-size: 24px;
-        }
-
-        u.dashed-hello {
-            border-bottom: 1px dashed #000;
-            text-decoration: none;
-        }
-
-        img.profile {
-            width: inherit;
-            height: border-box;
-        }
-
-        div.box {
-            width: 100%;
-            height: 100%;
-        }
-
-        .jumbotron {
-            background: #FFF;
-        }
-
-        p.about {
-            font-family: "Helvetica Neue", sans-serif;
-            font-size: 20px;
-        }
-
-        .navbar {
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .navbar-brand {
-            font-family: "Helvetica Neue", sans-serif;
-            font-size: 32px;
-            color: #000;
-            margin-left: 0;
-            padding-left: 0;
-        }
-
-        .navbar-brand:hover {
-            color: #000;
-        }
-
-
-        /*.breaker {*/
-        /*    margin-top: 4rem;*/
-        /*}*/
-
-        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-            color: #000;
-            background-color: #fff;
-            border-bottom: 3px solid #000;
-            border-radius: 0;
-        }
-
-        .navigation-pills {
-            color: #000;
-        }
-
-        blockquote {
-            bottom: 0;
-            position: absolute;
-        }
-
-        .icon-to-heading {
-            padding-right: 3px;
-            display: inline;
-        }
-
-
-        a.skill-title {
-            font-family: "Product Sans", sans-serif;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        p.skill-info {
-            font-style: italic;
-            margin-top: 0;
-            padding-top: 0;
-        }
-
-        div.collapse-button {
-            display: flex;
-            justify-content: right;
-            align-items: center;
-        }
-
-        .card-header {
-            background: #fff;
-        }
-
-        .card {
-            border: none;
-        }
-
-        div.skill-body {
-            margin-top: 1.5rem;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -146,7 +26,6 @@
             <nav class="navbar nav justify-content-center">
                 <a class="navbar-brand" href="index.html">Nikhil Anand</a>
             </nav>
-
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-10">
@@ -168,6 +47,15 @@
                                     <i class="fas fa-robot"></i>
                                     <div class="icon-to-heading"></div>
                                     Skills
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work"
+                                   role="tab"
+                                   aria-controls="pills-work" aria-selected="false">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="icon-to-heading"></div>
+                                    Work
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -276,71 +164,396 @@
             <div class="row">
                 <div class="col-sm-1 col-md-2 col-lg-2"></div>
                 <div class="col-sm-10 col-md-8 col-lg-8">
-
                     <!-- fixme changes -->
-                    <div class="skill-body">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <a class="skill-title">
-                                                    <i class="fab fa-java"></i>
-                                                    <div class="icon-to-heading"></div>
-                                                    Java
-                                                </a>
-                                                <p class="small skill-info">
-                                                    A concurrent, class-based, statically typed object-oriented
-                                                    language.
-                                                </p>
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+
+                            <div class="navigation-pills-inside-skills">
+                                <ul class="nav nav-pills nav-justified" id="pills-tab-in-skills" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-coding-tab" data-toggle="pill"
+                                           href="#pills-coding"
+                                           role="tab"
+                                           aria-controls="pills-coding" aria-selected="true">
+                                            <i class="fas fa-code"></i>
+                                            <div class="icon-to-heading"></div>
+                                            Coding
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-languages-tab" data-toggle="pill"
+                                           href="#pills-languages"
+                                           role="tab"
+                                           aria-controls="pills-languages" aria-selected="false">
+                                            <i class="fas fa-language"></i>
+                                            <div class="icon-to-heading"></div>
+                                            Languages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContentInner">
+                        <div class="tab-pane fade show active" id="pills-coding" role="tabpanel"
+                             aria-labelledby="pills-coding-tab">
+
+                            <!-- Skills here -->
+                            <div class="skill-body">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="skill-title">
+                                                            <i class="fab fa-java"></i>
+                                                            <div class="icon-to-heading"></div>
+                                                            Java
+                                                        </a>
+                                                        <p class="small skill-info">
+                                                            A concurrent, class-based, statically typed object-oriented
+                                                            language.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 collapse-button">
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseOne" title="Click to expand"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-6 collapse-button">
-                                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                                        data-target="#collapseOne"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                    <i class="fas fa-plus"></i>
-                                                </button>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="proficiency-bar-and-text">
+                                                    <div class="progress">
+                                                        <div class="progress-bar proficiency" role="progressbar"
+                                                             style="width: 90%"
+                                                             aria-valuenow="90" title="Proficiency level"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            Proficiency
+                                                        </div>
+                                                    </div>
+                                                    <p class="small font-weight-bold font-italic">Professional</p>
+                                                </div>
+                                                <div>
+                                                    <p class="skill-highlights">
+                                                        Well-versed in <b>core Java</b> concepts <br/>
+                                                        Can implement <b>data structures and algorithms</b>
+                                                        efficiently<br/>
+                                                        Used <b>OOP concepts</b> in every project I make in Java <br/>
+                                                        Have also worked with <b>Java EE</b>, <b>Java Swing</b>, <b>Java
+                                                        Applets</b> and <b>Java
+                                                        FX</b> <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <!-- Python -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="skill-title">
+                                                            <i class="fab fa-python"></i>
+                                                            <div class="icon-to-heading"></div>
+                                                            Python
+                                                        </a>
+                                                        <p class="small skill-info">
+                                                            A dynamic language emphasizing readability
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 collapse-button">
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseTwo" title="Click to expand"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="proficiency-bar-and-text">
+                                                    <div class="progress">
+                                                        <div class="progress-bar proficiency" role="progressbar"
+                                                             style="width: 50%"
+                                                             aria-valuenow="50" title="Proficiency level"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            Proficiency
+                                                        </div>
+                                                    </div>
+                                                    <p class="small font-weight-bold font-italic">Basic</p>
+                                                </div>
+                                                <div>
+                                                    <p class="skill-highlights">
+                                                        Basic concepts of the language <br/>
+                                                        Worked with <b>Flask</b>, <b>plotly</b>, <b>matplotlib</b>,
+                                                        etc<br/>
+                                                        Made a fully functional website using HTML, CSS, Javascript with
+                                                        <b>Flask backend</b><br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <!-- C/C++ -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="skill-title">
+                                                            <i class="fab fa-cuttlefish"></i>
+                                                            <div class="icon-to-heading"></div>
+                                                            C / C++
+                                                        </a>
+                                                        <p class="small skill-info">
+                                                            A general purpose system programming language.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 collapse-button">
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseThree" title="Click to expand"
+                                                                aria-expanded="false" aria-controls="collapseThree">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="proficiency-bar-and-text">
+                                                    <div class="progress">
+                                                        <div class="progress-bar proficiency" role="progressbar"
+                                                             style="width: 70%"
+                                                             aria-valuenow="70" title="Proficiency level"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            Proficiency
+                                                        </div>
+                                                    </div>
+                                                    <p class="small font-weight-bold font-italic">Basic</p>
+                                                </div>
+                                                <div>
+                                                    <p class="skill-highlights">
+                                                        Well versed in concepts of the language <br/>
+                                                        <b>Competitive Coding</b><br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <!-- HTML, CSS, JS -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="skill-title">
+                                                            <i class="fas fa-file-code"></i>
+                                                            <div class="icon-to-heading"></div>
+                                                            HTML, CSS and JavaScript
+                                                        </a>
+                                                        <p class="small skill-info">
+                                                            The languages that make up the web.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 collapse-button">
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseFour" title="Click to expand"
+                                                                aria-expanded="false" aria-controls="collapseFour">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="proficiency-bar-and-text">
+                                                    <div class="progress">
+                                                        <div class="progress-bar proficiency" role="progressbar"
+                                                             style="width: 80%"
+                                                             aria-valuenow="80" title="Proficiency level"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            Proficiency
+                                                        </div>
+                                                    </div>
+                                                    <p class="small font-weight-bold font-italic">Intermediate</p>
+                                                </div>
+                                                <div>
+                                                    <p class="skill-highlights">
+                                                        Made many websites using <b>HTML, CSS, Js</b> with Node, PHP and
+                                                        Flask backends <br/>
+                                                        Well versed in <b>Bootstrap</b> <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <!-- PHP -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="skill-title">
+                                                            <i class="fab fa-php"></i>
+                                                            <div class="icon-to-heading"></div>
+                                                            PHP
+                                                        </a>
+                                                        <p class="small skill-info">
+                                                            A popular general-purpose scripting language.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 collapse-button">
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseFive" title="Click to expand"
+                                                                aria-expanded="false" aria-controls="collapseFive">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="proficiency-bar-and-text">
+                                                    <div class="progress">
+                                                        <div class="progress-bar proficiency" role="progressbar"
+                                                             style="width: 80%"
+                                                             aria-valuenow="80" title="Proficiency level"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            Proficiency
+                                                        </div>
+                                                    </div>
+                                                    <p class="small font-weight-bold font-italic">Intermediate</p>
+                                                </div>
+                                                <div>
+                                                    <p class="skill-highlights">
+                                                        Backend knowledge of using a PHP Server <br/>
+                                                        Connected the fronted to a MySQL database using a PHP Backend
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <!-- SQL -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="skill-title">
+                                                            <i class="fas fa-database"></i>
+                                                            <div class="icon-to-heading"></div>
+                                                            SQL
+                                                        </a>
+                                                        <p class="small skill-info">
+                                                            Language of the relational databases.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 collapse-button">
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseSix" title="Click to expand"
+                                                                aria-expanded="false" aria-controls="collapseSix">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="proficiency-bar-and-text">
+                                                    <div class="progress">
+                                                        <div class="progress-bar proficiency" role="progressbar"
+                                                             style="width: 70%"
+                                                             aria-valuenow="70" title="Proficiency level"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            Proficiency
+                                                        </div>
+                                                    </div>
+                                                    <p class="small font-weight-bold font-italic">Basic</p>
+                                                </div>
+                                                <div>
+                                                    <p class="skill-highlights">
+                                                        Worked with many relational databases - <b>MySQL</b>,
+                                                        <b>SQLPlus</b> and <b>SQLite</b>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                     data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf
-                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod.
-                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                                        coffee
-                                        nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred
-                                        nesciunt sapiente ea
-                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                        farm-to-table, raw denim
-                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                        sustainable VHS.
-                                    </div>
-                                </div>
                             </div>
+                            <!-- Skills here -->
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-languages" role="tabpanel"
+                             aria-labelledby="pills-languages-tab">
+                            me
                         </div>
                     </div>
-
-                    <!-- Another skill -->
-
+                    <!-- fixme Skills here -->
 
                 </div>
+
                 <div class="col-sm-1 col-md-2 col-lg-2"></div>
             </div>
         </div>
     </div>
+    <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
+        <!-- Work -->
+        <!-- FIXME Correct it -->
+    </div>
+
     <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-Projects-tab">
         <!-- Projects -->
         <!-- FIXME Correct it -->
     </div>
+
     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-projects-tab">
         <!-- Projects -->
         <!-- FIXME Correct it -->

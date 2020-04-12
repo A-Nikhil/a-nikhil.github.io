@@ -1,0 +1,142 @@
+.display-6 {
+    font-size: 24px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+*::selection {
+    background: #000;
+    color: #fff;
+}
+
+span.well-hello-there {
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+.title-body {
+    font-size: 24px;
+}
+
+u.dashed-hello {
+    border-bottom: 1px dashed #000;
+    text-decoration: none;
+}
+
+img.profile {
+    width: inherit;
+    height: border-box;
+}
+
+div.box {
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron {
+    background: #FFF;
+}
+
+p.about {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+}
+
+.navbar {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.navbar-brand {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 32px;
+    color: #000;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navbar-brand:hover {
+    color: #000;
+}
+
+
+/*.breaker {*/
+/*    margin-top: 4rem;*/
+/*}*/
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 3px solid #000;
+    border-radius: 0;
+}
+
+.navigation-pills {
+    color: #000;
+}
+
+blockquote {
+    bottom: 0;
+    position: absolute;
+}
+
+.icon-to-heading {
+    padding-right: 3px;
+    display: inline;
+}
+
+
+a.skill-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p.skill-info {
+    font-style: italic;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div.collapse-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -webkit-align-items: center;
+}
+
+.card-header {
+    background: #fff;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.skill-body {
+    margin-top: 1.5rem;
+}
+
+div.proficiency {
+    background: -webkit-linear-gradient(left, #b7950b, #d4ac0d, #f1c40f, #f4d03f);
+    width: 30%;
+    color: #000;
+}
+
+p.skill-highlights {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+div.proficiency-bar-and-text {
+    text-align: center;
+    width: 30%;
+}
