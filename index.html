@@ -77,9 +77,9 @@
         }
 
 
-        .breaker {
-            margin-top: 4rem;
-        }
+        /*.breaker {*/
+        /*    margin-top: 4rem;*/
+        /*}*/
 
         .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
             color: #000;
@@ -101,6 +101,40 @@
             padding-right: 3px;
             display: inline;
         }
+
+
+        a.skill-title {
+            font-family: "Product Sans", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        p.skill-info {
+            font-style: italic;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        div.collapse-button {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .card-header {
+            background: #fff;
+        }
+
+        .card {
+            border: none;
+        }
+
+        div.skill-body {
+            margin-top: 1.5rem;
+        }
+
     </style>
 </head>
 <body>
@@ -119,18 +153,18 @@
                     <div class="navigation-pills">
                         <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home"
                                    role="tab"
-                                   aria-controls="pills-home" aria-selected="true">
+                                   aria-controls="pills-home" aria-selected="false">
                                     <i class="fas fa-house-user"></i>
                                     <div class="icon-to-heading"></div>
                                     Home
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-Skills-tab" data-toggle="pill" href="#pills-skills"
+                                <a class="nav-link active" id="pills-Skills-tab" data-toggle="pill" href="#pills-skills"
                                    role="tab"
-                                   aria-controls="pills-skills" aria-selected="false">
+                                   aria-controls="pills-skills" aria-selected="true">
                                     <i class="fas fa-robot"></i>
                                     <div class="icon-to-heading"></div>
                                     Skills
@@ -174,7 +208,8 @@
 </div>
 
 <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <!-- FIXME add show active here -->
+    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <!-- Home -->
 
         <!-- Jumbotron Text -->
@@ -234,19 +269,75 @@
         </div>
     </div>
 
-
-    <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
+    <!-- FIXME Remove show active here -->
+    <div class="tab-pane fade show active" id="pills-skills" role="tabpanel" aria-labelledby="pills-Skills-tab">
         <!-- Skills -->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-1 col-md-2 col-lg-2"></div>
                 <div class="col-sm-10 col-md-8 col-lg-8">
+
+                    <!-- fixme changes -->
+                    <div class="skill-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="skill-title">
+                                                    <i class="fab fa-java"></i>
+                                                    <div class="icon-to-heading"></div>
+                                                    Java
+                                                </a>
+                                                <p class="small skill-info">
+                                                    A concurrent, class-based, statically typed object-oriented
+                                                    language.
+                                                </p>
+                                            </div>
+                                            <div class="col-6 collapse-button">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                        data-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                     data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf
+                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                        nesciunt
+                                        laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                                        coffee
+                                        nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred
+                                        nesciunt sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                        farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another skill -->
+
+
                 </div>
                 <div class="col-sm-1 col-md-2 col-lg-2"></div>
             </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
+    <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-Projects-tab">
         <!-- Projects -->
         <!-- FIXME Correct it -->
     </div>

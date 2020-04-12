@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6433fc8980.js" crossorigin="anonymous"></script>
+    <style>
+        .icon-to-heading {
+            padding-right: 3px;
+            display: inline;
+        }
+
+
+        a.skill-title {
+            font-family: "Roboto", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        p.skill-info {
+            font-style: italic;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        div.collapse-button {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            -webkit-justify-content: flex-end;
+            -webkit-align-items: center;
+        }
+
+        .card-header {
+            background: #fff;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-body {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        div.skill-body {
+            margin-top: 1.5rem;
+        }
+
+        div.proficiency {
+            background: -webkit-linear-gradient(left, #b7950b, #d4ac0d, #f1c40f, #f4d03f);
+            width: 30%;
+            color: #000;
+        }
+
+        p.skill-highlights {
+            margin-top: 0.5rem;
+            font-size: 14px;
+            font-family: "Helvetica Neue", sans-serif;
+        }
+
+        div.proficiency-bar-and-text {
+            text-align: center;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="skill-body">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="skill-title">
+                                <i class="fab fa-java"></i>
+                                <div class="icon-to-heading"></div>
+                                Java
+                            </a>
+                            <p class="small skill-info">
+                                A concurrent, class-based, statically typed object-oriented
+                                language.
+                            </p>>
+                        </div>
+                        <div class="col-6 collapse-button">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" title="Click to expand"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                 data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="proficiency-bar-and-text">
+                        <div class="progress">
+                            <div class="progress-bar proficiency" role="progressbar" style="width: 90%"
+                                 aria-valuenow="90" title="Proficiency level"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                Proficiency
+                            </div>
+                        </div>
+                        <p class="small font-weight-bold font-italic">Professional</p>
+                    </div>
+                    <div>
+                        <p class="skill-highlights">
+                            Well-versed in <b>core Java</b> concepts <br/>
+                            Can implement <b>data structures and algorithms</b> efficiently<br/>
+                            Used <b>OOP concepts</b> in every project I make in Java <br/>
+                            Have also worked with <b>Java EE</b>, <b>Java Swing</b>, <b>Java Applets</b> and <b>Java
+                            FX</b> <br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Python -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="skill-title">
+                                <i class="fab fa-python"></i>
+                                <div class="icon-to-heading"></div>
+                                Python
+                            </a>
+                            <p class="small skill-info">
+                                A dynamic language emphasizing readability
+                            </p>
+                        </div>
+                        <div class="col-6 collapse-button">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" title="Click to expand"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                 data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="proficiency-bar-and-text">
+                        <div class="progress">
+                            <div class="progress-bar proficiency" role="progressbar" style="width: 50%"
+                                 aria-valuenow="50" title="Proficiency level"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                Proficiency
+                            </div>
+                        </div>
+                        <p class="small font-weight-bold font-italic">Basic</p>
+                    </div>
+                    <div>
+                        <p class="skill-highlights">
+                            Basic concepts of the language <br/>
+                            Worked with <b>Flask</b>, <b>plotly</b>, <b>matplotlib</b>, etc<br/>
+                            Made a fully functional website using HTML, CSS, Javascript with <b>Flask backend</b><br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
