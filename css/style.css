@@ -59,9 +59,9 @@ p.about {
 }
 
 
-/*.breaker {*/
-/*    margin-top: 4rem;*/
-/*}*/
+.breaker {
+    margin-top: 1rem;
+}
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #000;
@@ -97,6 +97,8 @@ p.skill-info {
     font-style: italic;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 div.collapse-button {
@@ -109,6 +111,7 @@ div.collapse-button {
 
 .card-header {
     background: #fff;
+    border: none;
 }
 
 .card {
@@ -116,6 +119,8 @@ div.collapse-button {
 }
 
 .card-body {
+    margin-top: 0;
+    padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -125,9 +130,9 @@ div.skill-body {
 }
 
 div.proficiency {
-    background: -webkit-linear-gradient(left, #b7950b, #d4ac0d, #f1c40f, #f4d03f);
+    background: #007aff;
     width: 30%;
-    color: #000;
+    color: #fff;
 }
 
 p.skill-highlights {
@@ -139,4 +144,15 @@ p.skill-highlights {
 div.proficiency-bar-and-text {
     text-align: center;
     width: 30%;
+}
+
+p.language-hello {
+    font-size: 16px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-style: italic;
+}
+
+hr {
+    margin-top: 0;
+    padding-top: 0;
 }
