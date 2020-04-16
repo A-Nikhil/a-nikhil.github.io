@@ -16,61 +16,45 @@
     <script src="https://kit.fontawesome.com/6433fc8980.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
 
+<body>
 <div class="skill-body">
-    <div class="accordion" id="accordionExample">
-        <div class="card">
-            <div class="card-header" id="headingOne">
+    <div class="accordion" id="github-projects">
+
+        <!-- Xenon OS -->
+        <div class="card" id="xenon-os">
+            <div class="card-header" id="githubOne">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
                             <a class="skill-title">
-                                <i class="fab fa-java"></i>
                                 <div class="icon-to-heading"></div>
-                                Java
+                                <button class="btn btn-link collapsed skill-title" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseOne" title="Click to expand"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                    Xenon OS
+
+                                </button>
                             </a>
                             <p class="small skill-info">
-                                A concurrent, class-based, statically typed object-oriented
-                                language.
+                                Linux based kernel implementing basic hardware functions
                             </p>
                         </div>
-                        <div class="col-6 collapse-button">
-                            <button class="btn btn-link collapsed" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseOne" title="Click to expand"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                <i class="fas fa-plus"></i>
-                            </button>
+                        <div class="col-6 code-icons">
+                            <i class="fab fa-cuttlefish"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                 data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse" aria-labelledby="githubOne"
+                 data-parent="#github-projects">
                 <div class="card-body">
-                    <div class="proficiency-bar-and-text">
-                        <div class="progress">
-                            <div class="progress-bar proficiency" role="progressbar"
-                                 style="width: 90%"
-                                 aria-valuenow="90" title="Proficiency level"
-                                 aria-valuemin="0" aria-valuemax="100">
-                                Proficiency
-                            </div>
-                        </div>
-                        <p class="small font-weight-bold font-italic">Professional</p>
-                    </div>
-                    <div>
-                        <p class="skill-highlights">
-                            Well-versed in <b>core Java</b> concepts <br/>
-                            Can implement <b>data structures and algorithms</b>
-                            efficiently<br/>
-                            Used <b>OOP concepts</b> in every project I make in Java <br/>
-                            Have also worked with <b>Java EE</b>, <b>Java Swing</b>, <b>Java
-                            Applets</b> and <b>Java
-                            FX</b> <br/>
-                        </p>
-                    </div>
+                    <p class="skill-highlights">
+                        The linker files and kernel files were written in C++. Made an entire keymap including Shift and
+                        Caps Lock functionality, although backspace wasn’t implemented. Had a Mouse integration too.
+                        Converted the entire OS as an iso file which worked without any errors in Oracle Virtual Box
+                    </p>
                 </div>
             </div>
         </div>
@@ -79,7 +63,7 @@
 
         <!-- Python -->
         <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header" id="githubTwo">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
@@ -103,8 +87,8 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                 data-parent="#accordionExample">
+            <div id="collapseTwo" class="collapse" aria-labelledby="githubTwo"
+                 data-parent="#github-projects">
                 <div class="card-body">
                     <div class="proficiency-bar-and-text">
                         <div class="progress">
@@ -134,7 +118,7 @@
 
         <!-- C/C++ -->
         <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="githubThree">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
@@ -158,8 +142,8 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                 data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse" aria-labelledby="githubThree"
+                 data-parent="#github-projects">
                 <div class="card-body">
                     <div class="proficiency-bar-and-text">
                         <div class="progress">
@@ -186,7 +170,7 @@
 
         <!-- HTML, CSS, JS -->
         <div class="card">
-            <div class="card-header" id="headingFour">
+            <div class="card-header" id="githubFour">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
@@ -210,8 +194,8 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                 data-parent="#accordionExample">
+            <div id="collapseFour" class="collapse" aria-labelledby="githubFour"
+                 data-parent="#github-projects">
                 <div class="card-body">
                     <div class="proficiency-bar-and-text">
                         <div class="progress">
@@ -239,7 +223,7 @@
 
         <!-- PHP -->
         <div class="card">
-            <div class="card-header" id="headingFive">
+            <div class="card-header" id="githubFive">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
@@ -263,8 +247,8 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                 data-parent="#accordionExample">
+            <div id="collapseFive" class="collapse" aria-labelledby="githubFive"
+                 data-parent="#github-projects">
                 <div class="card-body">
                     <div class="proficiency-bar-and-text">
                         <div class="progress">
@@ -292,7 +276,7 @@
 
         <!-- SQL -->
         <div class="card">
-            <div class="card-header" id="headingSix">
+            <div class="card-header" id="githubSix">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
@@ -316,8 +300,8 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                 data-parent="#accordionExample">
+            <div id="collapseSix" class="collapse" aria-labelledby="githubSix"
+                 data-parent="#github-projects">
                 <div class="card-body">
                     <div class="proficiency-bar-and-text">
                         <div class="progress">

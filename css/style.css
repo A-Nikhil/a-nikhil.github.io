@@ -85,12 +85,13 @@ blockquote {
 }
 
 
-a.skill-title, a.project-title {
+a.skill-title, a.project-title, .skill-title {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 0;
     padding-bottom: 0;
+    color: #000 ;
 }
 
 p.skill-info, p.project-info {
@@ -101,7 +102,7 @@ p.skill-info, p.project-info {
     padding-bottom: 0;
 }
 
-div.collapse-button {
+div.collapse-button, div.code-icons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
