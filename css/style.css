@@ -85,7 +85,7 @@ blockquote {
 }
 
 
-a.skill-title {
+a.skill-title, a.project-title {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -93,7 +93,7 @@ a.skill-title {
     padding-bottom: 0;
 }
 
-p.skill-info {
+p.skill-info, p.project-info {
     font-style: italic;
     margin-top: 0;
     padding-top: 0;
@@ -125,7 +125,7 @@ div.collapse-button {
     padding-bottom: 0;
 }
 
-div.skill-body {
+div.skill-body, div.project-body {
     margin-top: 1.5rem;
 }
 
@@ -135,7 +135,7 @@ div.proficiency {
     color: #fff;
 }
 
-p.skill-highlights {
+p.skill-highlights, p.project-highlights {
     margin-top: 0.5rem;
     font-size: 14px;
     font-family: "Helvetica Neue", sans-serif;
