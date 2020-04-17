@@ -1,3 +1,14 @@
+.footer-breaker {
+    margin-top: 3rem;
+
+}
+
+.footer-display {
+    font-family: serif;
+    font-size: medium;
+}
+
+
 .display-6 {
     font-size: 24px;
     font-family: "Helvetica Neue", sans-serif;
