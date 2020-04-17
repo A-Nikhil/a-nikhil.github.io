@@ -74,11 +74,6 @@ p.about {
     color: #000;
 }
 
-blockquote {
-    bottom: 0;
-    position: absolute;
-}
-
 .icon-to-heading {
     padding-right: 3px;
     display: inline;
@@ -156,4 +151,14 @@ p.language-hello {
 hr {
     margin-top: 0;
     padding-top: 0;
+}
+
+button.skill-title {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.no-margin {
+    padding-left: 0;
+    margin-left: 0;
 }

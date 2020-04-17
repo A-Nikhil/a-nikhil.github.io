@@ -18,21 +18,64 @@
 </head>
 
 <body>
-<div class="skill-body">
+<div class="skill-body" id="projects">
     <div class="accordion" id="github-projects">
+
+        <!-- Movie Recommendation Website -->
+        <div class="card" id="myIMDB">
+            <div class="card-header" id="githubThree">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 no-margin no-margin">
+                            <a class="skill-title">
+                                <button class="btn btn-link collapsed skill-title" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#project-collapseThree" title="Click to expand"
+                                        aria-expanded="true" aria-controls="project-collapseThree">
+                                    myIMDB
+                                </button>
+                            </a>
+                            <p class="small skill-info">
+                                Movie Recommendation website
+                            </p>
+                        </div>
+                        <div class="col-6 code-icons">
+                            <i class="fab fa-html5"></i>
+                            <div class="icon-to-heading"></div>
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="icon-to-heading"></div>
+                            <i class="fab fa-js-square"></i>
+                            <div class="icon-to-heading"></div>
+                            <i class="fab fa-node"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project-collapseThree" class="collapse" aria-labelledby="githubThree"
+                 data-parent="#github-projects">
+                <div class="card-body">
+                    <p class="skill-highlights">
+                        A Movie Recommendation website with HTML, CSS and JS frontend <br/>
+                        Supported by a NodeJS backend <br/>
+                        and a <b>MongoDB</b> database <br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
 
         <!-- Xenon OS -->
         <div class="card" id="xenon-os">
             <div class="card-header" id="githubOne">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 no-margin">
                             <a class="skill-title">
-                                <div class="icon-to-heading"></div>
                                 <button class="btn btn-link collapsed skill-title" type="button"
                                         data-toggle="collapse"
-                                        data-target="#collapseOne" title="Click to expand"
-                                        aria-expanded="true" aria-controls="collapseOne">
+                                        data-target="#project-collapseOne" title="Click to expand"
+                                        aria-expanded="true" aria-controls="project-collapseOne">
                                     Xenon OS
 
                                 </button>
@@ -47,13 +90,14 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="githubOne"
+            <div id="project-collapseOne" class="collapse" aria-labelledby="githubOne"
                  data-parent="#github-projects">
                 <div class="card-body">
                     <p class="skill-highlights">
-                        The linker files and kernel files were written in C++. Made an entire keymap including Shift and
-                        Caps Lock functionality, although backspace wasn’t implemented. Had a Mouse integration too.
-                        Converted the entire OS as an iso file which worked without any errors in Oracle Virtual Box
+                        The linker files and kernel files were written in <b>C++</b>. <br/>
+                        Made an entire keymap including <b>Shift and Caps Lock functionality</b>. <br/>
+                        Had a <b>Mouse graphics</b> too. <br/>
+                        Converted the entire OS as an ISO file which worked without any errors in Oracle Virtual Box <br/>
                     </p>
                 </div>
             </div>
@@ -61,268 +105,171 @@
 
         <hr>
 
-        <!-- Python -->
-        <div class="card">
+        <!-- Encrypto -->
+        <div class="card" id="encrypto">
             <div class="card-header" id="githubTwo">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 no-margin">
                             <a class="skill-title">
-                                <i class="fab fa-python"></i>
-                                <div class="icon-to-heading"></div>
-                                Python
+                                <button class="btn btn-link collapsed skill-title" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#project-collapseTwo" title="Click to expand"
+                                        aria-expanded="true" aria-controls="project-collapseTwo">
+                                    Encrypto
+                                </button>
                             </a>
                             <p class="small skill-info">
-                                A dynamic language emphasizing readability
+                                Image Steganography in Java with a Java FX UI
                             </p>
                         </div>
-                        <div class="col-6 collapse-button">
-                            <button class="btn btn-link collapsed" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseTwo" title="Click to expand"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="fas fa-plus"></i>
-                            </button>
+                        <div class="col-6 code-icons">
+                            <i class="fab fa-java"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="githubTwo"
+            <div id="project-collapseTwo" class="collapse" aria-labelledby="githubTwo"
                  data-parent="#github-projects">
                 <div class="card-body">
-                    <div class="proficiency-bar-and-text">
-                        <div class="progress">
-                            <div class="progress-bar proficiency" role="progressbar"
-                                 style="width: 50%"
-                                 aria-valuenow="50" title="Proficiency level"
-                                 aria-valuemin="0" aria-valuemax="100">
-                                Proficiency
-                            </div>
-                        </div>
-                        <p class="small font-weight-bold font-italic">Basic</p>
-                    </div>
-                    <div>
-                        <p class="skill-highlights">
-                            Basic concepts of the language <br/>
-                            Worked with <b>Flask</b>, <b>plotly</b>, <b>matplotlib</b>,
-                            etc<br/>
-                            Made a fully functional website using HTML, CSS, Javascript with
-                            <b>Flask backend</b><br/>
-                        </p>
-                    </div>
+                    <p class="skill-highlights">
+                        A message passing system that uses steganography, i.e. embedding text inside images. <br/>
+                        Made a Java software that performs pixel-by-pixel steganography. <br/>
+                        The software was presented with a <b>Java FX frontend</b>. <br/>
+                    </p>
                 </div>
             </div>
         </div>
 
         <hr>
 
-        <!-- C/C++ -->
-        <div class="card">
-            <div class="card-header" id="githubThree">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-6">
-                            <a class="skill-title">
-                                <i class="fab fa-cuttlefish"></i>
-                                <div class="icon-to-heading"></div>
-                                C / C++
-                            </a>
-                            <p class="small skill-info">
-                                A general purpose system programming language.
-                            </p>
-                        </div>
-                        <div class="col-6 collapse-button">
-                            <button class="btn btn-link collapsed" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseThree" title="Click to expand"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="githubThree"
-                 data-parent="#github-projects">
-                <div class="card-body">
-                    <div class="proficiency-bar-and-text">
-                        <div class="progress">
-                            <div class="progress-bar proficiency" role="progressbar"
-                                 style="width: 70%"
-                                 aria-valuenow="70" title="Proficiency level"
-                                 aria-valuemin="0" aria-valuemax="100">
-                                Proficiency
-                            </div>
-                        </div>
-                        <p class="small font-weight-bold font-italic">Basic</p>
-                    </div>
-                    <div>
-                        <p class="skill-highlights">
-                            Well versed in concepts of the language <br/>
-                            <b>Competitive Coding</b><br/>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- HTML, CSS, JS -->
-        <div class="card">
+        <!-- IDEA Parallelization -->
+        <div class="card" id="idea">
             <div class="card-header" id="githubFour">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 no-margin">
                             <a class="skill-title">
-                                <i class="fas fa-file-code"></i>
-                                <div class="icon-to-heading"></div>
-                                HTML, CSS and JavaScript
+                                <button class="btn btn-link collapsed skill-title" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#project-collapseFour" title="Click to expand"
+                                        aria-expanded="true" aria-controls="project-collapseFour">
+                                    IDEA Algorithm Parallelization
+                                </button>
                             </a>
                             <p class="small skill-info">
-                                The languages that make up the web.
+                                Parallelization of IDEA Algorithm
                             </p>
                         </div>
-                        <div class="col-6 collapse-button">
-                            <button class="btn btn-link collapsed" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFour" title="Click to expand"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                <i class="fas fa-plus"></i>
-                            </button>
+                        <div class="col-6 code-icons">
+                            <i class="fab fa-java"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="githubFour"
+            <div id="project-collapseFour" class="collapse" aria-labelledby="githubFour"
                  data-parent="#github-projects">
                 <div class="card-body">
-                    <div class="proficiency-bar-and-text">
-                        <div class="progress">
-                            <div class="progress-bar proficiency" role="progressbar"
-                                 style="width: 80%"
-                                 aria-valuenow="80" title="Proficiency level"
-                                 aria-valuemin="0" aria-valuemax="100">
-                                Proficiency
-                            </div>
-                        </div>
-                        <p class="small font-weight-bold font-italic">Intermediate</p>
-                    </div>
-                    <div>
-                        <p class="skill-highlights">
-                            Made many websites using <b>HTML, CSS, Js</b> with Node, PHP and
-                            Flask backends <br/>
-                            Well versed in <b>Bootstrap</b> <br/>
-                        </p>
-                    </div>
+                    <p class="skill-highlights">
+                        Parallelization of the International Data Encryption Algorithm. <br/>
+                        Coded in Java (JDK 12). <br/>
+                        Takes in a message with a random 128 bit key, encrypts the message. Performs key reversal and
+                        decryption
+                        of the message. <br/>
+                        Used <b>ExecutorService</b> to parallelize the algorithm with a Thread Pool.
+                    </p>
                 </div>
             </div>
         </div>
 
         <hr>
 
-        <!-- PHP -->
-        <div class="card">
+        <!-- Online Retail Store -->
+        <div class="card" id="online-retail-store">
             <div class="card-header" id="githubFive">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 no-margin">
                             <a class="skill-title">
-                                <i class="fab fa-php"></i>
-                                <div class="icon-to-heading"></div>
-                                PHP
+                                <button class="btn btn-link collapsed skill-title" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#project-collapseFive" title="Click to expand"
+                                        aria-expanded="true" aria-controls="project-collapseFive">
+                                    Online Retail Store
+                                </button>
                             </a>
                             <p class="small skill-info">
-                                A popular general-purpose scripting language.
+                                Basic Prototype of an Online Retail website
                             </p>
                         </div>
-                        <div class="col-6 collapse-button">
-                            <button class="btn btn-link collapsed" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFive" title="Click to expand"
-                                    aria-expanded="false" aria-controls="collapseFive">
-                                <i class="fas fa-plus"></i>
-                            </button>
+                        <div class="col-6 code-icons">
+                            <i class="fab fa-html5"></i>
+                            <div class="icon-to-heading"></div>
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="icon-to-heading"></div>
+                            <i class="fab fa-java"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="githubFive"
+            <div id="project-collapseFive" class="collapse" aria-labelledby="githubFive"
                  data-parent="#github-projects">
                 <div class="card-body">
-                    <div class="proficiency-bar-and-text">
-                        <div class="progress">
-                            <div class="progress-bar proficiency" role="progressbar"
-                                 style="width: 80%"
-                                 aria-valuenow="80" title="Proficiency level"
-                                 aria-valuemin="0" aria-valuemax="100">
-                                Proficiency
-                            </div>
-                        </div>
-                        <p class="small font-weight-bold font-italic">Intermediate</p>
-                    </div>
-                    <div>
-                        <p class="skill-highlights">
-                            Backend knowledge of using a PHP Server <br/>
-                            Connected the fronted to a MySQL database using a PHP Backend
-                            <br/>
-                        </p>
-                    </div>
+                    <p class="skill-highlights">
+                        It incorporates static web pages in the form of HTML5 and CSS3 and backend support as Java.
+                        <br/>
+                        Dynamic Web Pages were made as <b>JSP</b>. <br/>
+                        The central database was <b>SQLite</b>. <br/>
+                    </p>
                 </div>
             </div>
         </div>
 
         <hr>
 
-        <!-- SQL -->
-        <div class="card">
+        <!-- 1D Bin Packing -->
+        <div class="card" id="1d-bpp">
             <div class="card-header" id="githubSix">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 no-margin">
                             <a class="skill-title">
-                                <i class="fas fa-database"></i>
-                                <div class="icon-to-heading"></div>
-                                SQL
+                                <button class="btn btn-link collapsed skill-title" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#project-collapseSix" title="Click to expand"
+                                        aria-expanded="true" aria-controls="project-collapseSix">
+                                    1D Bin Packing Algorithm
+                                </button>
                             </a>
                             <p class="small skill-info">
-                                Language of the relational databases.
+                                1-Dimensional Bin Packing
                             </p>
                         </div>
-                        <div class="col-6 collapse-button">
-                            <button class="btn btn-link collapsed" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSix" title="Click to expand"
-                                    aria-expanded="false" aria-controls="collapseSix">
-                                <i class="fas fa-plus"></i>
-                            </button>
+                        <div class="col-6 code-icons">
+                            <i class="fab fa-java"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="githubSix"
+            <div id="project-collapseSix" class="collapse" aria-labelledby="githubSix"
                  data-parent="#github-projects">
                 <div class="card-body">
-                    <div class="proficiency-bar-and-text">
-                        <div class="progress">
-                            <div class="progress-bar proficiency" role="progressbar"
-                                 style="width: 70%"
-                                 aria-valuenow="70" title="Proficiency level"
-                                 aria-valuemin="0" aria-valuemax="100">
-                                Proficiency
-                            </div>
-                        </div>
-                        <p class="small font-weight-bold font-italic">Basic</p>
-                    </div>
-                    <div>
-                        <p class="skill-highlights">
-                            Worked with many relational databases - <b>MySQL</b>,
-                            <b>SQLPlus</b> and <b>SQLite</b>
-                        </p>
-                    </div>
+                    <p class="skill-highlights">
+                        Worked on a research paper implementation. <br/>
+                        Packing items of <i>w weight</i> into <i>n bins</i>, each having a total weight
+                        of<i>x</i> <br/>
+                        Optimized to find the least value of <i>n</i>. <br/>
+                        <a href="#">Link to Paper</a>
+                    </p>
                 </div>
             </div>
         </div>
+
+        <hr>
+
+        <!-- Financier
+
+        <hr> -->
     </div>
 </div>
 
