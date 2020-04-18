@@ -173,3 +173,7 @@ button.skill-title {
     padding-left: 0;
     margin-left: 0;
 }
+
+div.code-icons {
+    font-size: x-large;
+}
