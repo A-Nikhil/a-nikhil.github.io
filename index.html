@@ -52,16 +52,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work"
-                                   role="tab"
-                                   aria-controls="pills-work" aria-selected="false">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <div class="icon-to-heading"></div>
-                                    <br/>
-                                    Work
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" id="pills-Projects-tab" data-toggle="pill" href="#pills-projects"
                                    role="tab"
                                    aria-controls="pills-projects" aria-selected="false">
@@ -72,7 +62,17 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-projects"
+                                <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work"
+                                   role="tab"
+                                   aria-controls="pills-work" aria-selected="false">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="icon-to-heading"></div>
+                                    <br/>
+                                    Work
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
                                    role="tab"
                                    aria-controls="pills-contact" aria-selected="false">
                                     <i class="far fa-id-card"></i>
@@ -102,10 +102,8 @@
 </div>
 
 <div class="tab-content" id="pills-tabContent">
-    <!-- FIXME add show active here -->
-
     <!-- Home -->
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <!-- Jumbotron Text -->
         <div class="jumbotron">
             <div class="container-fluid">
@@ -908,10 +906,99 @@
         </div>
     </div>
 
+    <!-- Contact -->
+    <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-0 col-md-1 col-lg-2"></div>
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <div class="breaker" style="margin-top: 3rem"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-1 col-md-2 col-lg-3"></div>
+                            <div class="col-sm-10 col-md-8 col-lg-6">
+                                <div class="contact-platform">
+                                    <table>
+                                        <!-- Facebook -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="facebook"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @anandni
+                                            </td>
+                                        </tr>
+                                        <!-- Instagram -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="instagram"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @nikhil.__.anand
+                                            </td>
+                                        </tr>
+                                        <!-- Twitter -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="twitter"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @nikhil.__.anand
+                                            </td>
+                                        </tr>
+                                        <!-- Email -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="gmail"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @nikhil.__.anand
+                                            </td>
+                                        </tr>
+                                        <!-- Google-Plus -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="gplus"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @nikhil.__.anand
+                                            </td>
+                                        </tr>
+                                        <!-- Wordpress -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="wordpress"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @nikhil.__.anand
+                                            </td>
+                                        </tr>
+                                        <!-- Medium -->
+                                        <tr class="social-row" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+                                            <td class="social">
+                                                <a href="#"><i class="fab fa-facebook-square" id="medium"></i></a>
+                                            </td>
+                                            <td class="social-link">
+                                                @nikhil.__.anand
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 col-md-2 col-lg-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-0 col-md-1 col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Resume -->
     <div class="tab-pane fade" id="pills-resume" role="tabpanel" aria-labelledby="pills-resume-tab">
         <!-- FIXME Correct it -->
     </div>
+
 </div>
 
 <!-- footer -->
@@ -937,6 +1024,16 @@
         <div class="col-sm-0 col-md-1 col-lg-2"></div>
     </div>
 </div>
+
+<script>
+    function onMouseOver(id) {
+
+    }
+
+    function onMouseOut(id) {
+
+    }
+</script>
 
 </body>
 </html>

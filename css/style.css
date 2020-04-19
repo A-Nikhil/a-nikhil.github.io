@@ -97,7 +97,7 @@ a.skill-title, a.project-title, .skill-title {
     font-weight: bold;
     margin-bottom: 0;
     padding-bottom: 0;
-    color: #000 ;
+    color: #000;
 }
 
 p.skill-info, p.project-info {
@@ -176,4 +176,50 @@ button.skill-title {
 
 div.code-icons {
     font-size: x-large;
+}
+
+div.contact-platform {
+    font-size: medium;
+}
+
+.social a {
+    font-size: 3em;
+    padding-right: 2rem;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-google-plus-g:hover {
+    color: #dd4b39;
+}
+
+.fa-instagram:hover {
+    color: #bc2a8d;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-envelope:hover {
+    color: #D44638;
+}
+
+.fa-facebook-square,
+.fa-google-plus-g,
+.fa-twitter,
+.fa-instagram,
+.fa-youtube,
+.fa-envelope {
+    color: #6b6e73;
+}
+
+.social-link {
+    font-size: large;
 }
