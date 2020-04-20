@@ -2,6 +2,10 @@
   <dictionary name="besta">
     <words>
       <w>encrypto</w>
+      <w>gplus</w>
+      <w>linkedin</w>
+      <w>quora</w>
+      <w>wordpress</w>
     </words>
   </dictionary>
 </component>
