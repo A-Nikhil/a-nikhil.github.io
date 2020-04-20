@@ -90,8 +90,6 @@ p.about {
     display: inline;
 }
 
-.he
-
 a.skill-title, a.project-title, .skill-title {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
@@ -184,7 +182,11 @@ div.contact-platform {
 }
 
 td.social a {
-    padding-right: 2rem;
+    padding-right: 1rem;
+}
+
+td.social::-moz-focus-inner a::-moz-focus-inner {
+    padding-right: 1rem;
 }
 
 a.social-icon {
