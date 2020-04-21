@@ -181,14 +181,6 @@ div.contact-platform {
     font-size: medium;
 }
 
-td.social a {
-    padding-right: 1rem;
-}
-
-td.social::-moz-focus-inner a::-moz-focus-inner {
-    padding-right: 1rem;
-}
-
 a.social-icon {
     font-size: 3em;
 }
@@ -209,6 +201,11 @@ a.social-icon {
     font-size: large;
 }
 
-a.social-link-anchor {
+.social-link-anchor {
     color: #6b6e73;
+    font-size: medium;
+}
+
+div.social-link-anchor-div {
+    padding-left: 10px;
 }
