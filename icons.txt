@@ -1,8 +1,0 @@
-C => <i class="fab fa-cuttlefish"></i>
-Java => <i class="fab fa-java"></i>
-Python => <i class="fab fa-python"></i>
-PHP => <i class="fab fa-php"></i>
-HTML => <i class="fab fa-html5"></i>
-CSS => <i class="fab fa-css3-alt"></i>
-JavaScript => <i class="fab fa-js-square"></i>
-NodeJS => <i class="fab fa-node"></i>

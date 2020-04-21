@@ -193,7 +193,8 @@ a.social-icon {
 .fa-medium,
 .fa-wordpress,
 .fa-linkedin,
-.fa-quora {
+.fa-quora,
+#github {
     color: #6b6e73;
 }
 
@@ -208,4 +209,8 @@ a.social-icon {
 
 div.social-link-anchor-div {
     padding-left: 10px;
+}
+
+table#github-table {
+    margin: 0 auto;
 }

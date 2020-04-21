@@ -161,7 +161,7 @@
         </div>
     </div>
 
-    <!-- SKills -->
+    <!-- Skills -->
     <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-Skills-tab">
         <!-- Skills -->
         <div class="container-fluid">
@@ -183,6 +183,7 @@
                                            aria-controls="pills-coding" aria-selected="true">
                                             <i class="fas fa-code"></i>
                                             <div class="icon-to-heading"></div>
+                                            <br/>
                                             Coding
                                         </a>
                                     </li>
@@ -193,6 +194,7 @@
                                            aria-controls="pills-languages" aria-selected="false">
                                             <i class="fas fa-language"></i>
                                             <div class="icon-to-heading"></div>
+                                            <br/>
                                             Languages
                                         </a>
                                     </li>
@@ -640,6 +642,26 @@
             <div class="row">
                 <div class="col-sm-0 col-md-1 col-lg-2"></div>
                 <div class="col-sm-12 col-md-10 col-lg-8">
+                    <div class="breaker"></div>
+                    <table id="github-table">
+                        <tr title="Visit my Github !!" class="social-row"
+                            onmouseover="onMouseOver('github')"
+                            onmouseout="onMouseOut('github')">
+                            <td class="social">
+                                <a class="social-icon icon-to-heading" href="#">
+                                    <i class="fab fa-github" id="github"></i></a>
+                            </td>
+                            <td class="social-link">
+                                <div class="social-link-anchor-div">
+                                    <a class="social-link-anchor" id="github-link"
+                                       href="https://github.com/A-Nikhil">
+                                        A-Nikhil
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
                     <div class="skill-body" id="projects">
                         <div class="accordion" id="github-projects">
 
@@ -918,7 +940,6 @@
                             <div class="col-sm-1 col-md-2 col-lg-3"></div>
                             <div class="col-sm-10 col-md-8 col-lg-6">
                                 <div class="contact-platform">
-
                                     <div class="container-fluid" id="column-1-contact">
                                         <div class="row">
                                             <div class="col-5">
@@ -1156,6 +1177,11 @@
                 iconColor = "#11100e";
                 textLink = "#007aff";
                 break;
+            case 'github':
+                iconColor = "#000";
+                textLink = "#007aff";
+                break;
+
         }
         icon.style.color = iconColor;
         link.style.color = textLink;
