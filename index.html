@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Nikhil Anand">
+    <meta name="description" content="Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikhil Anand</title>
+    <link rel="icon" href="icons/myIcon.jpg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -62,16 +66,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work"
-                                   role="tab"
-                                   aria-controls="pills-work" aria-selected="false">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <div class="icon-to-heading"></div>
-                                    <br/>
-                                    Work
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
                                    role="tab"
                                    aria-controls="pills-contact" aria-selected="false">
@@ -79,16 +73,6 @@
                                     <div class="icon-to-heading"></div>
                                     <br/>
                                     Contact
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-resume-tab" data-toggle="pill" href="#pills-resume"
-                                   role="tab"
-                                   aria-controls="pills-resume" aria-selected="false">
-                                    <i class="fas fa-file-word"></i>
-                                    <div class="icon-to-heading"></div>
-                                    <br/>
-                                    Resume
                                 </a>
                             </li>
                         </ul>
@@ -102,6 +86,7 @@
 </div>
 
 <div class="tab-content" id="pills-tabContent">
+
     <!-- Home -->
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <!-- Jumbotron Text -->
@@ -121,9 +106,9 @@
                                     <span class="well-hello-there">Well, hello there !!</span> <br/>
                                 </p>
                                 <p class="title-body">
-                                    I am <b>Nikhil Anand</b> <br/>
+                                    I am <span id="nikhil-anand-jumbotron">Nikhil Anand</span> <br/>
                                     <u class="dashed-hello"> I love computers and the science that drives it. </u><br/>
-                                    Welcome to my world, say Hello <br/><br/></p>
+                                    Welcome to my <b>world</b>, say <b>Hello</b> <br/><br/></p>
                                 <blockquote class="blockquote text-left font-italic">
                                     <p class="mb-0">There are 10 types of people in this world, those who understand
                                         binary and those
@@ -630,11 +615,6 @@
         </div>
     </div>
 
-    <!-- Work -->
-    <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
-        <!-- FIXME Correct it -->
-    </div>
-
     <!-- Projects -->
     <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-Projects-tab">
         <div class="breaker"></div>
@@ -956,7 +936,8 @@
                                                         <td class="social-link">
                                                             <div class="social-link-anchor-div">
                                                                 <a class="social-link-anchor" id="facebook-link"
-                                                                   href="https://www.facebook.com/anandni/">
+                                                                   href="https://www.facebook.com/anandni/"
+                                                                   target="_blank">
                                                                     @anandni
                                                                 </a>
                                                             </div>
@@ -973,7 +954,8 @@
                                                         <td class="social-link">
                                                             <div class="social-link-anchor-div">
                                                                 <a class="social-link-anchor" id="instagram-link"
-                                                                   href="https://www.instagram.com/nikhil.__.anand/">
+                                                                   href="https://www.instagram.com/nikhil.__.anand/"
+                                                                   target="_blank">
                                                                     @nikhil.__.anand
                                                                 </a>
                                                             </div>
@@ -991,6 +973,7 @@
                                                         <td class="social-link">
                                                             <div class="social-link-anchor-div">
                                                                 <a class="social-link-anchor" id="twitter-link"
+                                                                   target="_blank"
                                                                    href="https://twitter.com/anand_nikhil01">
                                                                     @anand_nikhil01
                                                                 </a>
@@ -1009,8 +992,8 @@
                                                             <div class="social-link-anchor-div">
 
                                                                 <a class="social-link-anchor" id="linkedin-link"
-                                                                   href="https://www.linkedin.co
-                                                                   </m/in/a-nikhil/">
+                                                                   href="https://www.linkedin.com/in/a-nikhil/"
+                                                                   target="_blank">
                                                                     Nikhil Anand<br/>
                                                                     (a-nikhil)
                                                                 </a>
@@ -1050,7 +1033,8 @@
                                                         <td class="social-link">
                                                             <div class="social-link-anchor-div">
                                                                 <a class="social-link-anchor" id="quora-link"
-                                                                   href="https://www.quora.com/profile/Nikhil-Anand-112">
+                                                                   href="https://www.quora.com/profile/Nikhil-Anand-112"
+                                                                   target="_blank">
                                                                     Nikhil Anand
                                                                 </a>
                                                             </div>
@@ -1069,6 +1053,7 @@
                                                         <td class="social-link">
                                                             <div class="social-link-anchor-div">
                                                                 <a class="social-link-anchor" href="#"
+                                                                   target="_blank"
                                                                    id="wordpress-link">
                                                                     @nikhil.__.anand
                                                                 </a>
@@ -1086,7 +1071,8 @@
                                                         <td class="social-link">
                                                             <div class="social-link-anchor-div">
                                                                 <a class="social-link-anchor" id="medium-link"
-                                                                   href="https://medium.com/@nikhilanand1006">
+                                                                   href="https://medium.com/@nikhilanand1006"
+                                                                   target="_blank">
                                                                     Nikhil Anand<br/>(@nikhilanand1006)
                                                                 </a>
                                                             </div>
@@ -1107,11 +1093,18 @@
         </div>
     </div>
 
-    <!-- Resume -->
-    <div class="tab-pane fade" id="pills-resume" role="tabpanel" aria-labelledby="pills-resume-tab">
-        <!-- FIXME Correct it -->
-    </div>
+</div>
 
+<!-- Resume -->
+<div id="mySidenav" class="sidenav">
+    <a href="resume/NikhilAnandResume.pdf" id="about">
+        Resume
+        <div class="icon-to-heading"></div>
+        <div class="icon-to-heading"></div>
+        <div class="icon-to-heading"></div>
+        <div class="icon-to-heading"></div>
+        <i class="fas fa-file-download"></i>
+    </a>
 </div>
 
 <!-- footer -->
@@ -1121,13 +1114,18 @@
         <div class="row">
             <div class="col-sm-0 col-md-1 col-lg-2"></div>
             <div class="col-sm-12 col-md-10 col-lg-8 font-weight-bold footer-display">
-                Nikhil Anand &#169; April, 2020
+                Nikhil Anand &#169;
+                <a onload="setDate()" id="date-and-time">April, 2020</a>
             </div>
             <div class="col-sm-0 col-md-1 col-lg-2"></div>
         </div>
     </div>
     <div class="footer-breaker"></div>
 </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
 <!-- Template -->
 <div class="container-fluid">
@@ -1139,6 +1137,38 @@
 </div>
 
 <script>
+
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    function setDate() {
+        const date = new Date();
+        const month = date.getMonth();
+        const year = date.getFullYear();
+        const monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+            'August', 'September', 'October', 'November', 'December'];
+        document.getElementById("date-and-time").innerHTML = monthArray[month] + ", " + year;
+    }
+
     function onMouseOver(id) {
         let iconColor = "";
         let textLink = "";
