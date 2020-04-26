@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 html {
     scroll-behavior: smooth;
+}
+
+* {
+    word-spacing: 3px;
+    font-family: "Manrope", sans-serif;
 }
 
 .footer-breaker {
@@ -8,14 +15,14 @@ html {
 }
 
 .footer-display {
-    font-family: serif;
+    font-family: "Manrope", sans-serif;
     font-size: medium;
 }
 
 
 .display-6 {
     font-size: 24px;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 *::selection {
@@ -24,7 +31,7 @@ html {
 }
 
 span.well-hello-there {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Manrope", sans-serif;
     text-align: center;
 }
 
@@ -52,7 +59,7 @@ div.box {
 }
 
 p.about {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 20px;
 }
 
@@ -62,7 +69,7 @@ p.about {
 }
 
 .navbar-brand {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 32px;
     color: #000;
     margin-left: 0;
@@ -95,7 +102,7 @@ p.about {
 }
 
 a.skill-title, a.project-title, .skill-title {
-    font-family: "Roboto", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 0;
@@ -148,7 +155,7 @@ div.proficiency {
 p.skill-highlights, p.project-highlights {
     margin-top: 0.5rem;
     font-size: 14px;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 div.proficiency-bar-and-text {
@@ -158,7 +165,7 @@ div.proficiency-bar-and-text {
 
 p.language-hello {
     font-size: 16px;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-style: italic;
 }
 
