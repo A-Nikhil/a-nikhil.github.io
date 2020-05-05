@@ -70,7 +70,7 @@ p.about {
 
 .navbar-brand {
     font-family: "Manrope", sans-serif;
-    font-size: 32px;
+    font-size: 36px;
     color: #000;
     margin-left: 0;
     padding-left: 0;
@@ -286,12 +286,3 @@ iframe#resume {
 span#nikhil-anand-jumbotron {
     font-weight: bolder;
 }
-
-/*a#hover-on-hello {*/
-/*    color: #000;*/
-/*}*/
-
-/*a#hover-on-hello:hover {*/
-/*    color: #000;*/
-/*    text*/
-/*}*/
