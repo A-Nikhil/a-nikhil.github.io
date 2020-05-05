@@ -257,9 +257,9 @@ iframe#resume {
     width: auto;
 }
 
-#about {
+.about {
     top: 20px;
-    background-color: #007aff;
+    line-height: 1.8;
 }
 
 #myBtn {
@@ -286,3 +286,12 @@ iframe#resume {
 span#nikhil-anand-jumbotron {
     font-weight: bolder;
 }
+
+/*a#hover-on-hello {*/
+/*    color: #000;*/
+/*}*/
+
+/*a#hover-on-hello:hover {*/
+/*    color: #000;*/
+/*    text*/
+/*}*/
