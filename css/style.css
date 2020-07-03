@@ -241,7 +241,7 @@ iframe#resume {
 
 
 #mySidenav a {
-    position: fixed;
+    position: relative;
     left: -90px;
     transition: 0.3s;
     padding: 15px;
@@ -249,6 +249,7 @@ iframe#resume {
     text-decoration: none;
     font-size: 20px;
     color: white;
+    background: #007aff;
     border-radius: 0 5px 5px 0;
 }
 
