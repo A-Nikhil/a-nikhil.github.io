@@ -179,6 +179,10 @@ button.skill-title {
     margin-left: 0;
 }
 
+.btn:hover {
+    text-decoration: none;
+}
+
 .no-margin {
     padding-left: 0;
     margin-left: 0;
