@@ -70,7 +70,7 @@ p.about {
 
 .navbar-brand {
     font-family: "Manrope", sans-serif;
-    font-size: 36px;
+    font-size: 42px;
     color: #000;
     margin-left: 0;
     padding-left: 0;
@@ -177,6 +177,10 @@ hr {
 button.skill-title {
     padding-left: 0;
     margin-left: 0;
+}
+
+.btn:hover {
+    text-decoration: none;
 }
 
 .no-margin {
