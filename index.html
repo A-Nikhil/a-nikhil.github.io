@@ -21,6 +21,39 @@
 </head>
 <body>
 
+<script>
+    // Animate Progress bar
+    let i=0;
+
+    function setTitle(progressBar) {
+        progressBar.innerHTML = "Proficiency"
+    }
+
+    function animateMe(progressBarId, progress) {
+        if (i === 0) {
+            i = 1;
+            let progressBar = document.getElementById(progressBarId);
+            let width = 1;
+            console.log(progressBar.getAttribute("style"));
+            console.log(typeof(progressBar.getAttribute("style")));
+            if (progressBar.getAttribute("style") === null) {
+                let id = setInterval(frame, 20);
+                function frame() {
+                    if (width >= progress) {
+                        clearInterval(id);
+                        setTitle(progressBar);
+                        i = 0;
+                    } else {
+                        width++;
+                        // progressBar.style.width = width + "%";
+                        progressBar.setAttribute("style", "width: " + width + "%")
+                    }
+                }
+            }
+        }
+    }
+</script>
+
 <!-- Navbar -->
 <div class="container-fluid">
     <div class="row">
@@ -224,6 +257,7 @@
                                                         <a class="skill-title">
                                                             <button class="btn btn-link collapsed skill-title"
                                                                     type="button"
+                                                                    onclick="animateMe('java-progress-bar', 90)"
                                                                     data-toggle="collapse"
                                                                     data-target="#collapseOne" title="Click to expand"
                                                                     aria-expanded="true" aria-controls="collapseOne">
@@ -245,11 +279,9 @@
                                             <div class="card-body">
                                                 <div class="proficiency-bar-and-text">
                                                     <div class="progress">
-                                                        <div class="progress-bar proficiency" role="progressbar"
-                                                             style="width: 90%"
-                                                             aria-valuenow="90" title="Proficiency level"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                            Proficiency
+                                                        <div class="progress-bar proficiency"
+                                                             role="progressbar"
+                                                             id="java-progress-bar">
                                                         </div>
                                                     </div>
                                                     <p class="small font-weight-bold font-italic">Professional</p>
