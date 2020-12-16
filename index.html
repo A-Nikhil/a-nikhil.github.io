@@ -23,31 +23,28 @@
 
 <script>
     // Animate Progress bar
-    let i=0;
+    let i = 0;
 
     function setTitle(progressBar) {
         progressBar.innerHTML = "Proficiency"
     }
 
     function animateMe(progressBarId, progress) {
-        if (i === 0) {
-            i = 1;
-            let progressBar = document.getElementById(progressBarId);
-            let width = 1;
-            console.log(progressBar.getAttribute("style"));
-            console.log(typeof(progressBar.getAttribute("style")));
-            if (progressBar.getAttribute("style") === null) {
-                let id = setInterval(frame, 20);
-                function frame() {
-                    if (width >= progress) {
-                        clearInterval(id);
-                        setTitle(progressBar);
-                        i = 0;
-                    } else {
-                        width++;
-                        // progressBar.style.width = width + "%";
-                        progressBar.setAttribute("style", "width: " + width + "%")
-                    }
+        let progressBar = document.getElementById(progressBarId);
+        let width = 1;
+        console.log(progressBar.getAttribute("style"));
+        console.log(typeof (progressBar.getAttribute("style")));
+        if (progressBar.getAttribute("style") === null) {
+            let id = setInterval(frame, 20);
+
+            function frame() {
+                if (width >= progress) {
+                    clearInterval(id);
+                    setTitle(progressBar);
+                } else {
+                    width++;
+                    // progressBar.style.width = width + "%";
+                    progressBar.setAttribute("style", "width: " + width + "%")
                 }
             }
         }
@@ -312,6 +309,7 @@
                                                         <a class="skill-title">
                                                             <button class="btn btn-link collapsed skill-title"
                                                                     type="button"
+                                                                    onclick="animateMe('python-progress-bar', 50)"
                                                                     data-toggle="collapse"
                                                                     data-target="#collapseTwo" title="Click to expand"
                                                                     aria-expanded="false" aria-controls="collapseTwo">
@@ -332,11 +330,9 @@
                                             <div class="card-body">
                                                 <div class="proficiency-bar-and-text">
                                                     <div class="progress">
-                                                        <div class="progress-bar proficiency" role="progressbar"
-                                                             style="width: 50%"
-                                                             aria-valuenow="50" title="Proficiency level"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                            Proficiency
+                                                        <div class="progress-bar proficiency"
+                                                             role="progressbar"
+                                                             id="python-progress-bar">
                                                         </div>
                                                     </div>
                                                     <p class="small font-weight-bold font-italic">Basic</p>
@@ -365,6 +361,7 @@
                                                         <a class="skill-title">
                                                             <button class="btn btn-link collapsed skill-title"
                                                                     type="button"
+                                                                    onclick="animateMe('c-progress-bar', 70)"
                                                                     data-toggle="collapse"
                                                                     data-target="#collapseThree" title="Click to expand"
                                                                     aria-expanded="false" aria-controls="collapseThree">
@@ -386,10 +383,7 @@
                                                 <div class="proficiency-bar-and-text">
                                                     <div class="progress">
                                                         <div class="progress-bar proficiency" role="progressbar"
-                                                             style="width: 70%"
-                                                             aria-valuenow="70" title="Proficiency level"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                            Proficiency
+                                                             id="c-progress-bar">
                                                         </div>
                                                     </div>
                                                     <p class="small font-weight-bold font-italic">Basic</p>
@@ -415,6 +409,7 @@
                                                         <a class="skill-title">
                                                             <button class="btn btn-link collapsed skill-title"
                                                                     type="button"
+                                                                    onclick="animateMe('web-progress-bar', 80)"
                                                                     data-toggle="collapse"
                                                                     data-target="#collapseFour" title="Click to expand"
                                                                     aria-expanded="false" aria-controls="collapseFour">
@@ -435,11 +430,9 @@
                                             <div class="card-body">
                                                 <div class="proficiency-bar-and-text">
                                                     <div class="progress">
-                                                        <div class="progress-bar proficiency" role="progressbar"
-                                                             style="width: 80%"
-                                                             aria-valuenow="80" title="Proficiency level"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                            Proficiency
+                                                        <div class="progress-bar proficiency"
+                                                             role="progressbar"
+                                                             id="web-progress-bar">
                                                         </div>
                                                     </div>
                                                     <p class="small font-weight-bold font-italic">Intermediate</p>
@@ -466,6 +459,7 @@
                                                         <a class="skill-title">
                                                             <button class="btn btn-link collapsed skill-title"
                                                                     type="button"
+                                                                    onclick="animateMe('php-progress-bar', 80)"
                                                                     data-toggle="collapse"
                                                                     data-target="#collapseFive" title="Click to expand"
                                                                     aria-expanded="false" aria-controls="collapseFive">
@@ -486,11 +480,9 @@
                                             <div class="card-body">
                                                 <div class="proficiency-bar-and-text">
                                                     <div class="progress">
-                                                        <div class="progress-bar proficiency" role="progressbar"
-                                                             style="width: 80%"
-                                                             aria-valuenow="80" title="Proficiency level"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                            Proficiency
+                                                        <div class="progress-bar proficiency"
+                                                             role="progressbar"
+                                                             id="php-progress-bar">
                                                         </div>
                                                     </div>
                                                     <p class="small font-weight-bold font-italic">Intermediate</p>
@@ -517,6 +509,7 @@
                                                         <a class="skill-title">
                                                             <button class="btn btn-link collapsed skill-title"
                                                                     type="button"
+                                                                    onclick="animateMe('sql-progress-bar', 80)"
                                                                     data-toggle="collapse"
                                                                     data-target="#collapseSix" title="Click to expand"
                                                                     aria-expanded="false" aria-controls="collapseSix">
@@ -537,11 +530,9 @@
                                             <div class="card-body">
                                                 <div class="proficiency-bar-and-text">
                                                     <div class="progress">
-                                                        <div class="progress-bar proficiency" role="progressbar"
-                                                             style="width: 70%"
-                                                             aria-valuenow="70" title="Proficiency level"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                            Proficiency
+                                                        <div class="progress-bar proficiency"
+                                                             role="progressbar"
+                                                             id="sql-progress-bar">
                                                         </div>
                                                     </div>
                                                     <p class="small font-weight-bold font-italic">Basic</p>
